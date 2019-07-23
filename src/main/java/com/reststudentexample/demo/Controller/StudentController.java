@@ -17,6 +17,7 @@ public class StudentController {
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public Student22 save(@RequestBody Student22 account){
         student22Service.save(account);
+        System.out.println("Heeeeeeeelllllooooooo");
         return account;
     }
 
